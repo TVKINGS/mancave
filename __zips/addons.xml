@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.autocompletion" name="AutoCompletion for virtual keyboard" version="1.0.1" provider-name="Philipp Temminghoff (phil65)">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.autocompletion" version="1.0.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="plugin.py" />
+    <extension point="xbmc.python.script"       library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">AutoCompletion for the virtual keyboard (needs skin support)</summary>
+        <description lang="en">AutoCompletion for the virtual keyboard (needs skin support)</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE Version 2.1, February 1999</license>
+        <source>https://github.com/phil65/plugin.program.autocompletion</source>
+    </extension>
+</addon>
+
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>f4mTester</summary>
+        <description></description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.horrorcave" name="Horror Cave" version="1.0" provider-name="Man Cave">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Horror</summary>
+        <description lang="en">Horror Movies Shows and more</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide></video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="2018.09.20"
+  name="SportsDevil"
+  provider-name="SportsDevil">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.dateutil" />
+   <import addon="script.module.simplejson" />
+   <import addon="script.module.six" />
+   <import addon="script.module.requests" />
+   <import addon="plugin.video.f4mTester" />
+   <import addon="script.module.slproxy" />
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <!-- <extension point="xbmc.service" library="service/streamlink_proxy.py" /> -->
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">SportsDevil</summary>
+    <description lang="en">[I]There can only be one.[/I][CR][CR]Unofficial Kodi Addon.</description>
+    <disclaimer lang="en">There can only be one.</disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.tvkings2"
+       name="[COLOR darkgrey]TV Kings[/COLOR] [COLOR red]BETA Release[/COLOR]"
+       version="3.2"
+       provider-name="TV Kings">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">[COLOR darkgrey]TV Kings Premium buytvkings.mancavekodi.com[/COLOR]</summary>
+    <language>en</language>
+    <description lang="en">[COLOR darkgrey]TV Kings[/COLOR] Official Addon - The Future of Great Quality and Stable Streams - for more info go to [COLOR yellowgreen]buytvkings.mancavekodi.com[/COLOR]. Regards, TV kings Team.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
+    <addon id="repository.mancave" name="Man Cave Repo" version="1.4" provider-name="Man Cave Entertainment">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Man Cave Repo">
+			<info compressed="false">https://raw.githubusercontent.com/TVKINGS/mancave/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/TVKINGS/mancave/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/TVKINGS/mancave/master/zips/</datadir>
+		<dir>
+            <info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+	    <dir>
+             <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+             <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+              <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+        </dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+		</dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Man Cave Repo</summary>
+            <description>All your entertainment needs</description>
+            <platform>all</platform>
+            <genre></genre>
+        </extension>
+    </addon>
+
+<addon id="script.module.python.koding.aio"
+   name="Python Koding AIO"
+   version="1.0"
+   provider-name="Total Revolution">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.urlresolver" version="1.2.0"/>
+    <import addon="script.module.requests" version="2.3.0"/>
+    <import addon="script.module.beautifulsoup" version="2.1.31"/>
+    <import addon="script.module.unidecode" version="0.4.16"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Python Koding All In One</summary>
+    <description lang="en">Python Koding AIO contains a bunch of time saving modules that allows for quick and simple development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <license>Creative Commons 4.0-NC-ND</license>
+    <forum>http://totalrevolution.tv/forum</forum>
+    <website>http://totalrevolution.tv</website>
+    <news>1.0 Stable release</news>
+    <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
+  </extension>
+</addon>
+
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.18" provider-name="jsergio">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="plugin.video.youtube" optional="true" />
+		<import addon="script.module.python.twitch" optional="true" />
+		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+		<import addon="plugin.video.gdrive" optional="true" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+	</extension>
+</addon>
+
+<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.1.3" provider-name="Team Universal">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.beautifulsoup" version="3.2.1"/>
+        <import addon="script.module.futures" version="2.2.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.six"/>
+        <import addon="repository.universalscrapers"/>
+	<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+
+                <!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+    </requires>
+    <extension point="xbmc.python.module" library="lib"/>
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+            </description>
+            <license>GPL v3</license>
+            <source>https://</source>
+        </extension>
+</addon>
+
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.requests"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+		<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+	</extension>
+</addon>
+</addons>
